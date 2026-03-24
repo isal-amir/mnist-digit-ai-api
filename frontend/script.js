@@ -18,7 +18,7 @@ if(!drawing) return
 ctx.fillStyle = "white"
 
 ctx.beginPath()
-ctx.arc(e.offsetX, e.offsetY, 5, 0, Math.PI*2)
+ctx.arc(e.offsetX, e.offsetY, 10, 0, Math.PI*2)
 ctx.fill()
 
 }
@@ -52,5 +52,8 @@ const result = await response.json()
 
 document.getElementById("result").innerText =
 "Prediction: " + result.prediction
+
+document.getElementById("latency").innerText = 
+"Latency: " + (result.latency * 1000).toFixed(2) + " ms"
 
 }

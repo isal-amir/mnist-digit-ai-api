@@ -5,7 +5,7 @@ from PIL import Image
 
 from app.config import IMAGE_SIZE
 
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 
 def crop_image(img):
 
@@ -52,9 +52,9 @@ def preprocess_base64_image(image_base64: str):
     img = img.reshape(1, 28, 28, 1)
 
     # debug
-    plt.imshow(img.squeeze(), cmap='gray')
-    plt.title("Preprocessed Image")
-    plt.show()
+    # plt.imshow(img.squeeze(), cmap='gray')
+    # plt.title("Preprocessed Image")
+    # plt.show()
 
     return img
 
