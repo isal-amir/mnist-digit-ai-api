@@ -1,0 +1,5 @@
+fastapi==0.135.1
+uvicorn[standard]==0.42.0
+numpy==1.26.4
+pillow==11.3.0
+tflite-runtime==2.14.0
